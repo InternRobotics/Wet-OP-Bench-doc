@@ -8,7 +8,7 @@
   <meta name="referrer" content="no-referrer">
   <title>Beyond Motion Execution: Benchmarking Embodied Agents on Wet-Lab Operations and Procedures</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=13">
+  <link rel="stylesheet" href="assets/style.css?v=14">
   <script src="assets/terminology.js?v=8" defer></script>
   <script src="assets/tasks.js?v=9" defer></script>
   <script src="assets/nav.js?v=8" defer></script>
@@ -295,24 +295,11 @@
         </table>
       </div>
       <p class="details-note">Success rate (SR, %) and stage score (0–100). Demonstrated columns pool C-only, B-only, I-only, and Mixed, with 40 episodes per task per run. All (20) is the task-balanced mean. π0.5, OpenWAM, and InternW0-Δ are each fine-tuned for 100k steps on the 14 demonstrated tasks, with global batch size 256, and the headline ± values are the standard deviation over three runs of 680 episodes. Qwen+π0.5 is Qwen3.8-Flash planning over frozen π0.5, with task memory and in-context demonstrations turned off; its numbers are one run of 246 completed episodes and have no standard deviation. Bold marks the best value in a column.</p>
-      <h3>Within-task generalization and zero-shot transfer</h3>
-      <div class="details-scroll" role="region" aria-label="Generalization and zero-shot results" tabindex="0">
-        <table class="details-table results-table results-gen">
-          <caption class="sr-only">Success rate and stage score for each within-task setting and for the six zero-shot tasks. Each cell is success rate, then stage score.</caption>
-          <thead>
-            <tr><th scope="col">Split / setting</th><th scope="col">InternW0-Δ</th><th scope="col">OpenWAM</th><th scope="col">π0.5</th><th scope="col">Qwen+π0.5</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">C-only (demo)</th><td class="best">34.3 / 60.7</td><td>22.6 / 54.9</td><td>24.0 / 50.0</td><td>— / —</td></tr>
-            <tr><th scope="row">B-only (demo)</th><td class="best">33.1 / 58.7</td><td>24.5 / 56.2</td><td>28.6 / 54.0</td><td>27.4 / 45.3</td></tr>
-            <tr><th scope="row">I-only (demo)</th><td class="best">35.2 / 61.0</td><td>23.3 / 56.4</td><td>23.8 / 49.8</td><td>— / —</td></tr>
-            <tr><th scope="row">Mixed (demo)</th><td class="best">35.7 / 61.4</td><td>20.2 / 53.4</td><td>24.3 / 50.9</td><td>19.0 / 41.6</td></tr>
-            <tr><th scope="row">All demo settings</th><td class="best">34.6 / 60.5</td><td>22.7 / 55.2</td><td>25.2 / 51.2</td><td>20.8 / 42.4</td></tr>
-            <tr><th scope="row">Zero-shot (6 tasks)</th><td class="best">0.8 / 15.5</td><td>0.3 / 12.7</td><td>0.0 / 13.7</td><td>0.0 / 12.0</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="details-note">Cells are success rate (%) / stage score (0–100). Qwen+π0.5 has no C-only or I-only episodes in the completed run. On the six held-out tasks every model stays below 1% success. Partial stage credit comes mainly from opening steps that match a demonstrated operation.</p>
+      <h3>Capability analysis</h3>
+      <figure class="results-figure">
+        <img src="assets/figures/capability-radars.png" width="2750" height="1000" alt="Two radar charts for InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5. Left: capability profile of success rate across horizon, precision, quantitative target, and reaction observation. Right: atomic-skill pass rate for scoop, grasp, pick, place, pour, stir, press, pull, push, insert, turn, handover, align, and shake.">
+        <figcaption><span><b>Capability analysis.</b> On the 14 demonstrated tasks, (a) is success rate across horizon, precision, quantitative-target, and reaction-observation groups, and (b) is the occurrence-level atomic-skill pass rate over reached stages.</span></figcaption>
+      </figure>
     </section>
   </main>
 

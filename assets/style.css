@@ -117,6 +117,10 @@ select{min-height:40px;padding:7px 30px 7px 12px;background:#fff;border:1px soli
 .radar-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:6px 6px 2px}
 .radar-card svg{display:block;width:100%;height:auto}
 .radar-table{min-width:560px}
+.results-figure{margin:8px 0 0;padding:16px 16px 0;background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.results-figure img{display:block;width:100%;height:auto}
+.results-figure figcaption{margin-top:12px;padding:12px 4px 14px;border-top:1px solid #eaf0f5;color:var(--muted);font-size:14px;line-height:1.6}
+.results-figure figcaption b{color:var(--ink);font-weight:600}
 .results-table :is(th,td){text-align:center;font-variant-numeric:tabular-nums;white-space:nowrap}
 .results-table tbody th{text-align:left}
 .results-table .best{font-weight:700;color:var(--ink)}
