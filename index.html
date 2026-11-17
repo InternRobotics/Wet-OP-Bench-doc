@@ -53,7 +53,7 @@
       </nav>
       <figure class="teaser">
         <a class="teaser-image" href="assets/figures/benchmark-overview.jpg" target="_blank" rel="noopener noreferrer" tabindex="-1"><picture><source srcset="assets/figures/benchmark-overview.webp" type="image/webp"><img src="assets/figures/benchmark-overview.jpg" width="3726" height="1407" alt="Benchmark overview. Four operation families and six zero-shot tasks surround a summary wheel of 14 atomic skills, the dual-arm Lift2, 14 demonstrated tasks, 500 training episodes each, and four generalization settings. The right side shows a titration that scores 0.4 and fails by overshooting, plus capability profiles and success-rate and stage-score summaries for InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5." decoding="async" fetchpriority="high"></picture></a>
-        <figcaption><span><b>Benchmark overview.</b> Fourteen demonstrated tasks and six zero-shot tasks span four operation families. Stage-wise scoring keeps partial progress visible: the titration example earns a process score of 0.4 and fails because it overshoots the endpoint. Results compare InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5 on demonstrated tasks, zero-shot tasks, and all 20 tasks.</span><a href="assets/figures/benchmark-overview.jpg" target="_blank" rel="noopener noreferrer">Open full figure <span aria-hidden="true">↗</span></a></figcaption>
+        <figcaption><span><b>Benchmark overview.</b> Fourteen demonstrated tasks and six zero-shot tasks span four operation families. Stage-wise scoring keeps partial progress visible: the titration example earns a process score of 0.4 and fails because it overshoots the endpoint. The callouts on the right are the earlier four-model summary. Current numbers for InternW0-Δ, OpenWAM, and π0.5 are in Results.</span><a href="assets/figures/benchmark-overview.jpg" target="_blank" rel="noopener noreferrer">Open full figure <span aria-hidden="true">↗</span></a></figcaption>
       </figure>
     </div>
 
@@ -142,7 +142,7 @@
         <div class="radar-card">
 <svg font-family="Inter, Segoe UI, Arial, sans-serif" class="capability-radar" viewBox="0 0 720 620" role="img" aria-labelledby="radar-title radar-desc">
 <title id="radar-title">Capability profile radar</title>
-<desc id="radar-desc">Success rate for InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5 across horizon, precision, quantitative-target, and reaction-observation bins.</desc>
+<desc id="radar-desc">Success rate for InternW0-Δ, OpenWAM, and π0.5 across horizon, precision, quantitative-target, and reaction-observation bins.</desc>
 <polygon points="360.0,229.3 396.8,241.3 419.6,272.6 419.6,311.4 396.8,342.7 360.0,354.7 323.2,342.7 300.4,311.4 300.4,272.6 323.2,241.3" fill="none" stroke="#e3e9f1" stroke-width="1"/>
 <text x="366.0" y="225.3" fill="#8aa0b8" font-size="12">20%</text>
 <polygon points="360.0,166.7 433.7,190.6 479.2,253.3 479.2,330.7 433.7,393.4 360.0,417.3 286.3,393.4 240.8,330.7 240.8,253.3 286.3,190.6" fill="none" stroke="#e3e9f1" stroke-width="1"/>
@@ -159,50 +159,39 @@
 <line x1="360" y1="292" x2="181.2" y2="350.1" stroke="#e3e9f1" stroke-width="1"/>
 <line x1="360" y1="292" x2="181.2" y2="233.9" stroke="#e3e9f1" stroke-width="1"/>
 <line x1="360" y1="292" x2="249.5" y2="139.9" stroke="#e3e9f1" stroke-width="1"/>
-<polygon points="360.0,130.0 429.1,196.9 420.2,272.4 503.9,338.8 430.7,389.3 360.0,355.3 291.7,386.0 354.9,293.6 240.5,253.2 333.3,255.2" fill="#235ccd" fill-opacity="0.12" stroke="#235ccd" stroke-width="2.4" stroke-linejoin="round"/>
-<polygon points="360.0,188.6 407.1,227.1 394.9,280.7 479.2,330.7 402.7,350.8 360.0,332.4 315.1,353.9 357.6,292.8 274.5,264.2 358.9,290.5" fill="#e07a2f" fill-opacity="0.12" stroke="#e07a2f" stroke-width="2.4" stroke-linejoin="round"/>
-<polygon points="360.0,144.4 398.9,238.5 427.0,270.2 471.7,328.3 406.0,355.4 360.0,352.8 310.1,360.7 360.0,292.0 272.4,263.5 342.1,267.4" fill="#1c9b86" fill-opacity="0.12" stroke="#1c9b86" stroke-width="2.4" stroke-linejoin="round"/>
-<polygon points="360.0,183.3 398.1,239.5 405.9,277.1 417.5,310.7 410.6,361.7 360.0,321.8 318.0,349.8 360.0,292.0 288.2,268.7 341.0,265.9" fill="#7a4ea3" fill-opacity="0.12" stroke="#7a4ea3" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,130.0 427.8,198.7 420.2,272.4 500.4,337.6 429.8,388.1 360.0,355.3 292.4,385.0 354.9,293.6 242.0,253.7 333.8,256.0" fill="#235ccd" fill-opacity="0.12" stroke="#235ccd" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,188.9 409.5,223.8 394.9,280.7 475.6,329.6 405.7,354.9 360.0,332.4 313.8,355.6 357.6,292.8 272.1,263.4 358.0,289.2" fill="#e07a2f" fill-opacity="0.12" stroke="#e07a2f" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,144.4 399.2,238.0 426.5,270.4 474.1,329.1 405.9,355.1 360.0,352.8 309.9,360.9 360.0,292.0 272.1,263.4 342.7,268.2" fill="#1c9b86" fill-opacity="0.12" stroke="#1c9b86" stroke-width="2.4" stroke-linejoin="round"/>
 <circle cx="360.0" cy="130.0" r="3.2" fill="#235ccd"/>
-<circle cx="429.1" cy="196.9" r="3.2" fill="#235ccd"/>
+<circle cx="427.8" cy="198.7" r="3.2" fill="#235ccd"/>
 <circle cx="420.2" cy="272.4" r="3.2" fill="#235ccd"/>
-<circle cx="503.9" cy="338.8" r="3.2" fill="#235ccd"/>
-<circle cx="430.7" cy="389.3" r="3.2" fill="#235ccd"/>
+<circle cx="500.4" cy="337.6" r="3.2" fill="#235ccd"/>
+<circle cx="429.8" cy="388.1" r="3.2" fill="#235ccd"/>
 <circle cx="360.0" cy="355.3" r="3.2" fill="#235ccd"/>
-<circle cx="291.7" cy="386.0" r="3.2" fill="#235ccd"/>
+<circle cx="292.4" cy="385.0" r="3.2" fill="#235ccd"/>
 <circle cx="354.9" cy="293.6" r="3.2" fill="#235ccd"/>
-<circle cx="240.5" cy="253.2" r="3.2" fill="#235ccd"/>
-<circle cx="333.3" cy="255.2" r="3.2" fill="#235ccd"/>
-<circle cx="360.0" cy="188.6" r="3.2" fill="#e07a2f"/>
-<circle cx="407.1" cy="227.1" r="3.2" fill="#e07a2f"/>
+<circle cx="242.0" cy="253.7" r="3.2" fill="#235ccd"/>
+<circle cx="333.8" cy="256.0" r="3.2" fill="#235ccd"/>
+<circle cx="360.0" cy="188.9" r="3.2" fill="#e07a2f"/>
+<circle cx="409.5" cy="223.8" r="3.2" fill="#e07a2f"/>
 <circle cx="394.9" cy="280.7" r="3.2" fill="#e07a2f"/>
-<circle cx="479.2" cy="330.7" r="3.2" fill="#e07a2f"/>
-<circle cx="402.7" cy="350.8" r="3.2" fill="#e07a2f"/>
+<circle cx="475.6" cy="329.6" r="3.2" fill="#e07a2f"/>
+<circle cx="405.7" cy="354.9" r="3.2" fill="#e07a2f"/>
 <circle cx="360.0" cy="332.4" r="3.2" fill="#e07a2f"/>
-<circle cx="315.1" cy="353.9" r="3.2" fill="#e07a2f"/>
+<circle cx="313.8" cy="355.6" r="3.2" fill="#e07a2f"/>
 <circle cx="357.6" cy="292.8" r="3.2" fill="#e07a2f"/>
-<circle cx="274.5" cy="264.2" r="3.2" fill="#e07a2f"/>
-<circle cx="358.9" cy="290.5" r="3.2" fill="#e07a2f"/>
+<circle cx="272.1" cy="263.4" r="3.2" fill="#e07a2f"/>
+<circle cx="358.0" cy="289.2" r="3.2" fill="#e07a2f"/>
 <circle cx="360.0" cy="144.4" r="3.2" fill="#1c9b86"/>
-<circle cx="398.9" cy="238.5" r="3.2" fill="#1c9b86"/>
-<circle cx="427.0" cy="270.2" r="3.2" fill="#1c9b86"/>
-<circle cx="471.7" cy="328.3" r="3.2" fill="#1c9b86"/>
-<circle cx="406.0" cy="355.4" r="3.2" fill="#1c9b86"/>
+<circle cx="399.2" cy="238.0" r="3.2" fill="#1c9b86"/>
+<circle cx="426.5" cy="270.4" r="3.2" fill="#1c9b86"/>
+<circle cx="474.1" cy="329.1" r="3.2" fill="#1c9b86"/>
+<circle cx="405.9" cy="355.1" r="3.2" fill="#1c9b86"/>
 <circle cx="360.0" cy="352.8" r="3.2" fill="#1c9b86"/>
-<circle cx="310.1" cy="360.7" r="3.2" fill="#1c9b86"/>
+<circle cx="309.9" cy="360.9" r="3.2" fill="#1c9b86"/>
 <circle cx="360.0" cy="292.0" r="3.2" fill="#1c9b86"/>
-<circle cx="272.4" cy="263.5" r="3.2" fill="#1c9b86"/>
-<circle cx="342.1" cy="267.4" r="3.2" fill="#1c9b86"/>
-<circle cx="360.0" cy="183.3" r="3.2" fill="#7a4ea3"/>
-<circle cx="398.1" cy="239.5" r="3.2" fill="#7a4ea3"/>
-<circle cx="405.9" cy="277.1" r="3.2" fill="#7a4ea3"/>
-<circle cx="417.5" cy="310.7" r="3.2" fill="#7a4ea3"/>
-<circle cx="410.6" cy="361.7" r="3.2" fill="#7a4ea3"/>
-<circle cx="360.0" cy="321.8" r="3.2" fill="#7a4ea3"/>
-<circle cx="318.0" cy="349.8" r="3.2" fill="#7a4ea3"/>
-<circle cx="360.0" cy="292.0" r="3.2" fill="#7a4ea3"/>
-<circle cx="288.2" cy="268.7" r="3.2" fill="#7a4ea3"/>
-<circle cx="341.0" cy="265.9" r="3.2" fill="#7a4ea3"/>
+<circle cx="272.1" cy="263.4" r="3.2" fill="#1c9b86"/>
+<circle cx="342.7" cy="268.2" r="3.2" fill="#1c9b86"/>
 <text x="360.0" y="68.0" text-anchor="middle" fill="#15243a" font-size="14" font-weight="700">Horizon</text>
 <text x="360.0" y="84.0" text-anchor="middle" fill="#55677c" font-size="13">short</text>
 <text x="491.7" y="110.8" text-anchor="start" fill="#15243a" font-size="14" font-weight="700">Horizon</text>
@@ -223,45 +212,42 @@
 <text x="147.0" y="238.8" text-anchor="end" fill="#55677c" font-size="13">no</text>
 <text x="228.3" y="110.8" text-anchor="end" fill="#15243a" font-size="14" font-weight="700">React.</text>
 <text x="228.3" y="126.8" text-anchor="end" fill="#55677c" font-size="13">yes</text>
-<g transform="translate(86,568)">
+<g transform="translate(160,568)">
 <line x1="0" y1="8" x2="28" y2="8" stroke="#235ccd" stroke-width="3" stroke-linecap="round"/>
 <circle cx="14" cy="8" r="3.2" fill="#235ccd"/>
 <text x="36" y="13" fill="#15243a" font-size="14" font-weight="600">InternW0-Δ</text>
-<line x1="158" y1="8" x2="186" y2="8" stroke="#e07a2f" stroke-width="3" stroke-linecap="round"/>
-<circle cx="172" cy="8" r="3.2" fill="#e07a2f"/>
-<text x="194" y="13" fill="#15243a" font-size="14" font-weight="600">OpenWAM</text>
-<line x1="316" y1="8" x2="344" y2="8" stroke="#1c9b86" stroke-width="3" stroke-linecap="round"/>
-<circle cx="330" cy="8" r="3.2" fill="#1c9b86"/>
-<text x="352" y="13" fill="#15243a" font-size="14" font-weight="600">π0.5</text>
-<line x1="474" y1="8" x2="502" y2="8" stroke="#7a4ea3" stroke-width="3" stroke-linecap="round"/>
-<circle cx="488" cy="8" r="3.2" fill="#7a4ea3"/>
-<text x="510" y="13" fill="#15243a" font-size="14" font-weight="600">Qwen+π0.5</text>
+<line x1="180" y1="8" x2="208" y2="8" stroke="#e07a2f" stroke-width="3" stroke-linecap="round"/>
+<circle cx="194" cy="8" r="3.2" fill="#e07a2f"/>
+<text x="216" y="13" fill="#15243a" font-size="14" font-weight="600">OpenWAM</text>
+<line x1="340" y1="8" x2="368" y2="8" stroke="#1c9b86" stroke-width="3" stroke-linecap="round"/>
+<circle cx="354" cy="8" r="3.2" fill="#1c9b86"/>
+<text x="376" y="13" fill="#15243a" font-size="14" font-weight="600">π0.5</text>
 </g></svg>
         </div>
         <div class="details-scroll" role="region" aria-label="Capability profile success rates" tabindex="0">
           <table class="details-table results-table radar-table">
             <caption class="sr-only">Success rate for each capability bin. Bold marks the highest value in that row.</caption>
             <thead>
-              <tr><th scope="col">Bin</th><th scope="col">Tasks</th><th scope="col">InternW0-Δ</th><th scope="col">OpenWAM</th><th scope="col">π0.5</th><th scope="col">Qwen+π0.5</th></tr>
+              <tr><th scope="col">Bin</th><th scope="col">Tasks</th><th scope="col">InternW0-Δ</th><th scope="col">OpenWAM</th><th scope="col">π0.5</th></tr>
             </thead>
             <tbody>
-              <tr><th scope="row">Horizon short</th><td>2</td><td class="best">51.7</td><td>33.0</td><td>47.1</td><td>34.7</td></tr>
-              <tr><th scope="row">Horizon medium</th><td>8</td><td class="best">37.5</td><td>25.6</td><td>21.1</td><td>20.7</td></tr>
-              <tr><th scope="row">Horizon long</th><td>4</td><td>20.2</td><td>11.7</td><td class="best">22.5</td><td>15.4</td></tr>
-              <tr><th scope="row">Precision low</th><td>2</td><td class="best">48.3</td><td>40.0</td><td>37.5</td><td>19.3</td></tr>
-              <tr><th scope="row">Precision medium</th><td>8</td><td class="best">38.4</td><td>23.2</td><td>25.0</td><td>27.5</td></tr>
-              <tr><th scope="row">Precision high</th><td>4</td><td class="best">20.2</td><td>12.9</td><td>19.4</td><td>9.5</td></tr>
-              <tr><th scope="row">Quant. no</th><td>13</td><td class="best">37.1</td><td>24.4</td><td>27.1</td><td>22.8</td></tr>
-              <tr><th scope="row">Quant. yes</th><td>1</td><td class="best">1.7</td><td>0.8</td><td>0.0</td><td>0.0</td></tr>
-              <tr><th scope="row">React. no</th><td>11</td><td class="best">40.1</td><td>28.7</td><td>29.4</td><td>24.1</td></tr>
-              <tr><th scope="row">React. yes</th><td>3</td><td class="best">14.5</td><td>0.6</td><td>9.7</td><td>10.3</td></tr>
+              <tr><th scope="row">Horizon short</th><td>2</td><td class="best">51.7</td><td>32.9</td><td>47.1</td></tr>
+              <tr><th scope="row">Horizon medium</th><td>8</td><td class="best">36.8</td><td>26.9</td><td>21.3</td></tr>
+              <tr><th scope="row">Horizon long</th><td>4</td><td>20.2</td><td>11.7</td><td class="best">22.3</td></tr>
+              <tr><th scope="row">Precision low</th><td>2</td><td class="best">47.1</td><td>38.8</td><td>38.3</td></tr>
+              <tr><th scope="row">Precision medium</th><td>8</td><td class="best">37.9</td><td>24.8</td><td>24.9</td></tr>
+              <tr><th scope="row">Precision high</th><td>4</td><td class="best">20.2</td><td>12.9</td><td>19.4</td></tr>
+              <tr><th scope="row">Quant. no</th><td>13</td><td class="best">36.7</td><td>25.1</td><td>27.2</td></tr>
+              <tr><th scope="row">Quant. yes</th><td>1</td><td class="best">1.7</td><td>0.8</td><td>0.0</td></tr>
+              <tr><th scope="row">React. no</th><td>11</td><td class="best">39.6</td><td>29.5</td><td>29.5</td></tr>
+              <tr><th scope="row">React. yes</th><td>3</td><td class="best">14.2</td><td>1.1</td><td>9.4</td></tr>
             </tbody>
           </table>
         </div>
       </div>
       <p class="details-note">Success rate (%) on the 14 demonstrated tasks. Each spoke is the unweighted mean of the tasks in that bin. Quant. yes is task 14 only. React. yes is tasks 03, 07, and 13.</p>
 
-      <p class="details-lead">Task success stays below the stage score for every model. On the 14 demonstrated tasks, InternW0-Δ reaches 34.6 ± 1.1% success and a stage score of 60.5 ± 1.0, ahead of π0.5 (25.2 ± 1.4% and 51.2 ± 0.4), OpenWAM (22.7 ± 0.5% and 55.2 ± 0.5), and Qwen+π0.5 (20.8% and 42.4). Across all 20 tasks, InternW0-Δ reaches 24.5 ± 0.9% and 47.0 ± 0.8, compared with 17.6 ± 1.0% and 39.9 ± 0.3 for π0.5, 16.0 ± 0.3% and 42.5 ± 0.4 for OpenWAM, and 14.6% and 33.3 for Qwen+π0.5.</p>
+      <p class="details-lead">Task success stays below the stage score for every model. On the 14 demonstrated tasks, InternW0-Δ reaches 34.2 ± 0.4% success and a stage score of 60.7 ± 0.5, ahead of π0.5 (25.2 ± 1.6% and 51.1 ± 0.1) and OpenWAM (23.4 ± 0.5% and 55.9 ± 0.9). Across all 20 tasks, InternW0-Δ reaches 24.2 ± 0.4% and 47.1 ± 0.5, compared with 17.7 ± 1.1% and 39.9 ± 0.1 for π0.5 and 16.5 ± 0.3% and 42.9 ± 0.6 for OpenWAM.</p>
       <div class="details-scroll" role="region" aria-label="Results by operation family" tabindex="0">
         <table class="details-table results-table results-main">
           <caption class="sr-only">Success rate and stage score by operation family, for demonstrated tasks, zero-shot tasks, and all 20 tasks.</caption>
@@ -287,21 +273,110 @@
             </tr>
           </thead>
           <tbody>
-            <tr><th scope="row">π0.5</th><td>47.2</td><td class="best">67.0</td><td>4.2</td><td>23.5</td><td>32.9</td><td>75.5</td><td>20.8</td><td>39.9</td><td>25.2</td><td>51.2</td><td>0.0</td><td>13.7</td><td>17.6</td><td>39.9</td></tr>
-            <tr><th scope="row">OpenWAM</th><td>51.1</td><td>65.5</td><td>7.5</td><td>42.7</td><td>25.4</td><td>76.1</td><td>10.8</td><td>33.8</td><td>22.7</td><td>55.2</td><td>0.3</td><td>12.7</td><td>16.0</td><td>42.5</td></tr>
-            <tr><th scope="row">InternW0-Δ</th><td class="best">55.3</td><td>65.8</td><td class="best">21.0</td><td class="best">50.8</td><td class="best">42.1</td><td class="best">83.5</td><td class="best">21.9</td><td>37.3</td><td class="best">34.6</td><td class="best">60.5</td><td class="best">0.8</td><td class="best">15.5</td><td class="best">24.5</td><td class="best">47.0</td></tr>
-            <tr><th scope="row">Qwen+π0.5</th><td>39.3</td><td>58.0</td><td>1.9</td><td>15.1</td><td>26.9</td><td>59.5</td><td>19.4</td><td class="best">40.6</td><td>20.8</td><td>42.4</td><td>0.0</td><td>12.0</td><td>14.6</td><td>33.3</td></tr>
+            <tr><th scope="row">π0.5</th><td>48.1</td><td class="best">67.4</td><td>3.8</td><td>23.1</td><td>32.9</td><td>75.5</td><td>20.8</td><td class="best">39.7</td><td>25.2</td><td>51.1</td><td>0.0</td><td>13.7</td><td>17.7</td><td>39.9</td></tr>
+            <tr><th scope="row">OpenWAM</th><td>51.7</td><td>65.7</td><td>10.0</td><td>45.4</td><td>25.4</td><td>76.1</td><td>10.3</td><td>33.3</td><td>23.4</td><td>55.9</td><td>0.3</td><td>12.7</td><td>16.5</td><td>42.9</td></tr>
+            <tr><th scope="row">InternW0-Δ</th><td class="best">55.0</td><td>65.7</td><td class="best">19.6</td><td class="best">51.4</td><td class="best">42.1</td><td class="best">83.5</td><td class="best">22.2</td><td>37.6</td><td class="best">34.2</td><td class="best">60.7</td><td class="best">0.8</td><td class="best">15.5</td><td class="best">24.2</td><td class="best">47.1</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="details-note">Success rate (SR, %) and stage score (0–100). Demonstrated columns pool C-only, B-only, I-only, and Mixed, with 40 episodes per task per run. All (20) is the task-balanced mean. π0.5, OpenWAM, and InternW0-Δ are each fine-tuned for 100k steps on the 14 demonstrated tasks, with global batch size 256, and the headline ± values are the standard deviation over three runs of 680 episodes. Qwen+π0.5 is Qwen3.8-Flash planning over frozen π0.5, with task memory and in-context demonstrations turned off; its numbers are one run of 246 completed episodes and have no standard deviation. Bold marks the best value in a column.</p>
-      <h3>Capability analysis</h3>
-      <figure class="results-figure">
-        <img src="assets/figures/capability-radars.png" width="2750" height="1000" alt="Two radar charts for InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5. Left: capability profile of success rate across horizon, precision, quantitative target, and reaction observation. Right: atomic-skill pass rate for scoop, grasp, pick, place, pour, stir, press, pull, push, insert, turn, handover, align, and shake.">
-        <figcaption><span><b>Capability analysis.</b> On the 14 demonstrated tasks, (a) is success rate across horizon, precision, quantitative-target, and reaction-observation groups, and (b) is the occurrence-level atomic-skill pass rate over reached stages.</span></figcaption>
-      </figure>
+      <p class="details-note">Success rate (SR, %) and stage score (0–100). Family, demonstrated, and zero-shot columns are unweighted means of the tasks in that group. All (20) is the task-balanced mean. π0.5, OpenWAM, and InternW0-Δ are each fine-tuned for 100k steps on the 14 demonstrated tasks, with global batch size 256. The ± values are the standard deviation over three runs of 680 episodes. 153 scenes use revised instructions and were re-run; the other 527 scenes are unchanged and are spliced in from the previous three runs. Bold marks the best value in a column.</p>
+      <p class="details-note">On the 153 revised-instruction scenes, the stage score moves from 23.7 to 23.4 ± 0.3 for π0.5, from 39.2 to 41.8 ± 1.0 for OpenWAM, and from 48.4 to 49.2 ± 0.1 for InternW0-Δ. Success rate on that subset moves from 6.5% to 6.8%, from 9.4% to 12.0%, and from 22.2% to 20.7%. Weighted by scene instead of by task, the 680-scene stage scores are 44.5 ± 0.1 for π0.5 (SR 20.8%), 48.3 ± 0.7 for OpenWAM (SR 19.3%), and 52.7 ± 0.5 for InternW0-Δ (SR 28.3%).</p>
+
+      <h3>Atomic-skill pass rate</h3>
+      <div class="details-scroll" role="region" aria-label="Atomic skill pass rates" tabindex="0">
+        <table class="details-table results-table">
+          <caption class="sr-only">Occurrence-level atomic-skill pass rate on the 14 demonstrated tasks. Bold marks the highest value in that row.</caption>
+          <thead>
+            <tr><th scope="col">Skill</th><th scope="col">InternW0-Δ</th><th scope="col">OpenWAM</th><th scope="col">π0.5</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Scoop</th><td class="best">37.9</td><td>30.8</td><td>1.1</td></tr>
+            <tr><th scope="row">Grasp</th><td class="best">81.2</td><td>80.5</td><td>77.2</td></tr>
+            <tr><th scope="row">Pick</th><td class="best">82.6</td><td>82.5</td><td>77.8</td></tr>
+            <tr><th scope="row">Place</th><td>76.8</td><td>72.6</td><td class="best">79.0</td></tr>
+            <tr><th scope="row">Pour</th><td>71.2</td><td class="best">71.3</td><td>47.9</td></tr>
+            <tr><th scope="row">Stir</th><td class="best">32.6</td><td>25.7</td><td>30.7</td></tr>
+            <tr><th scope="row">Press</th><td class="best">96.2</td><td>92.6</td><td>94.9</td></tr>
+            <tr><th scope="row">Pull</th><td class="best">100.0</td><td class="best">100.0</td><td class="best">100.0</td></tr>
+            <tr><th scope="row">Push</th><td class="best">100.0</td><td>94.7</td><td>86.2</td></tr>
+            <tr><th scope="row">Insert</th><td class="best">56.1</td><td>42.3</td><td>39.5</td></tr>
+            <tr><th scope="row">Turn</th><td>57.0</td><td>36.2</td><td class="best">58.6</td></tr>
+            <tr><th scope="row">Handover</th><td class="best">96.6</td><td>84.6</td><td>95.7</td></tr>
+            <tr><th scope="row">Align</th><td>61.9</td><td class="best">65.9</td><td>50.6</td></tr>
+            <tr><th scope="row">Shake</th><td class="best">77.3</td><td>69.4</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="details-note">Occurrence-level pass rate (%) on the 14 demonstrated tasks, counted over stages the policy reached. A dash means that model never reached the skill. π0.5 has no reached shake stages in these runs.</p>
+
+      <h3>Closed-loop checks</h3>
+      <p class="details-lead">Three extra checks sit outside the 680-scene leaderboard. Each cell is one run of 20 episodes. B1 shows or hides the titration color change and moves the accepted volume window to early (10 mL), nominal (15 mL), or late (20 mL). B2 leaves the balance display on or blanks it during solid weighing. B3 counts jumps in the fixed-weight weighing readout.</p>
+      <div class="details-scroll" role="region" aria-label="Titration color ablation" tabindex="0">
+        <table class="details-table results-table">
+          <caption class="sr-only">Titration color ablation. Each model has success rate, stage score, and mean dispensed volume.</caption>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Window</th>
+              <th scope="col" rowspan="2">Color</th>
+              <th scope="colgroup" colspan="3">π0.5</th>
+              <th scope="colgroup" colspan="3">OpenWAM</th>
+              <th scope="colgroup" colspan="3">InternW0-Δ</th>
+            </tr>
+            <tr>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">mL</th>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">mL</th>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">mL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Early</th><td>On</td><td>30.0</td><td>46.0</td><td>14.6</td><td>10.0</td><td>33.0</td><td>19.9</td><td>30.0</td><td>46.0</td><td>13.9</td></tr>
+            <tr><th scope="row">Early</th><td>Off</td><td>0.0</td><td>19.0</td><td>21.4</td><td>5.0</td><td>33.0</td><td>18.5</td><td>0.0</td><td>26.0</td><td>19.9</td></tr>
+            <tr><th scope="row">Nominal</th><td>On</td><td>25.0</td><td>44.0</td><td>19.5</td><td>0.0</td><td>25.0</td><td>20.6</td><td>20.0</td><td>42.0</td><td>16.1</td></tr>
+            <tr><th scope="row">Nominal</th><td>Off</td><td>5.0</td><td>23.0</td><td>22.1</td><td>0.0</td><td>27.0</td><td>18.6</td><td>5.0</td><td>32.0</td><td>19.0</td></tr>
+            <tr><th scope="row">Late</th><td>On</td><td>20.0</td><td>41.0</td><td>19.9</td><td>0.0</td><td>27.0</td><td>20.5</td><td>15.0</td><td>38.0</td><td>20.1</td></tr>
+            <tr><th scope="row">Late</th><td>Off</td><td>0.0</td><td>22.0</td><td>24.1</td><td>0.0</td><td>25.0</td><td>20.8</td><td>5.0</td><td>29.0</td><td>20.3</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="details-note">B1, task 13 titration. SR is success rate (%), score is the stage score (0–100), and mL is the mean dispensed volume. At the nominal window the overshoot rate is 65% with color on and 85% with color off for π0.5, 80% and 60% for OpenWAM, and 35% and 65% for InternW0-Δ.</p>
+      <div class="details-scroll" role="region" aria-label="Balance display ablation" tabindex="0">
+        <table class="details-table results-table">
+          <caption class="sr-only">Balance display ablation for solid weighing.</caption>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Display</th>
+              <th scope="colgroup" colspan="3">π0.5</th>
+              <th scope="colgroup" colspan="3">OpenWAM</th>
+              <th scope="colgroup" colspan="3">InternW0-Δ</th>
+            </tr>
+            <tr>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">Net g</th>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">Net g</th>
+              <th scope="col">SR</th><th scope="col">Score</th><th scope="col">Net g</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">On</th><td>45.0</td><td>54.0</td><td>5.5</td><td>30.0</td><td>42.5</td><td>11.5</td><td>30.0</td><td>47.5</td><td>−1.3</td></tr>
+            <tr><th scope="row">Blank</th><td>5.0</td><td>23.5</td><td>9.0</td><td>25.0</td><td>33.0</td><td>34.0</td><td>30.0</td><td>35.5</td><td>−1.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="details-note">B2, task 12 whole-sample solid weighing. Net g is the mean final net mass on the balance.</p>
+      <div class="details-scroll" role="region" aria-label="Readout stability audit" tabindex="0">
+        <table class="details-table results-table">
+          <caption class="sr-only">Fixed-weight weighing readout stability.</caption>
+          <thead>
+            <tr><th scope="col">Model</th><th scope="col">SR</th><th scope="col">Score</th><th scope="col">Jumps ≥ 0.05 g</th><th scope="col">Readout changes</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">π0.5</th><td>0.0</td><td>30.5</td><td>8.7</td><td>15.2</td></tr>
+            <tr><th scope="row">OpenWAM</th><td>5.0</td><td>48.0</td><td>9.5</td><td>20.4</td></tr>
+            <tr><th scope="row">InternW0-Δ</th><td>0.0</td><td>16.5</td><td>3.0</td><td>11.4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="details-note">B3, task 14 fixed-weight weighing. Jumps and readout changes are means per episode.</p>
     </section>
-  </main>
 
   <footer class="shell footer"><span>Beyond Motion Execution</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   </div>
