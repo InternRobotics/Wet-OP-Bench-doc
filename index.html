@@ -8,7 +8,7 @@
   <meta name="referrer" content="no-referrer">
   <title>Beyond Motion Execution: Benchmarking Embodied Agents on Wet-Lab Operations and Procedures</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=12">
+  <link rel="stylesheet" href="assets/style.css?v=13">
   <script src="assets/terminology.js?v=8" defer></script>
   <script src="assets/tasks.js?v=9" defer></script>
   <script src="assets/nav.js?v=8" defer></script>
@@ -137,6 +137,130 @@
 
     <section id="results" class="page-section results shell" aria-labelledby="results-heading">
       <h2 id="results-heading">Results</h2>
+      <h3>Capability profile</h3>
+      <div class="radar-wrap">
+        <div class="radar-card">
+<svg font-family="Inter, Segoe UI, Arial, sans-serif" class="capability-radar" viewBox="0 0 720 620" role="img" aria-labelledby="radar-title radar-desc">
+<title id="radar-title">Capability profile radar</title>
+<desc id="radar-desc">Success rate for InternW0-Δ, OpenWAM, π0.5, and Qwen+π0.5 across horizon, precision, quantitative-target, and reaction-observation bins.</desc>
+<polygon points="360.0,229.3 396.8,241.3 419.6,272.6 419.6,311.4 396.8,342.7 360.0,354.7 323.2,342.7 300.4,311.4 300.4,272.6 323.2,241.3" fill="none" stroke="#e3e9f1" stroke-width="1"/>
+<text x="366.0" y="225.3" fill="#8aa0b8" font-size="12">20%</text>
+<polygon points="360.0,166.7 433.7,190.6 479.2,253.3 479.2,330.7 433.7,393.4 360.0,417.3 286.3,393.4 240.8,330.7 240.8,253.3 286.3,190.6" fill="none" stroke="#e3e9f1" stroke-width="1"/>
+<text x="366.0" y="162.7" fill="#8aa0b8" font-size="12">40%</text>
+<polygon points="360.0,104.0 470.5,139.9 538.8,233.9 538.8,350.1 470.5,444.1 360.0,480.0 249.5,444.1 181.2,350.1 181.2,233.9 249.5,139.9" fill="none" stroke="#e3e9f1" stroke-width="1"/>
+<text x="366.0" y="100.0" fill="#8aa0b8" font-size="12">60%</text>
+<line x1="360" y1="292" x2="360.0" y2="104.0" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="470.5" y2="139.9" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="538.8" y2="233.9" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="538.8" y2="350.1" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="470.5" y2="444.1" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="360.0" y2="480.0" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="249.5" y2="444.1" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="181.2" y2="350.1" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="181.2" y2="233.9" stroke="#e3e9f1" stroke-width="1"/>
+<line x1="360" y1="292" x2="249.5" y2="139.9" stroke="#e3e9f1" stroke-width="1"/>
+<polygon points="360.0,130.0 429.1,196.9 420.2,272.4 503.9,338.8 430.7,389.3 360.0,355.3 291.7,386.0 354.9,293.6 240.5,253.2 333.3,255.2" fill="#235ccd" fill-opacity="0.12" stroke="#235ccd" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,188.6 407.1,227.1 394.9,280.7 479.2,330.7 402.7,350.8 360.0,332.4 315.1,353.9 357.6,292.8 274.5,264.2 358.9,290.5" fill="#e07a2f" fill-opacity="0.12" stroke="#e07a2f" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,144.4 398.9,238.5 427.0,270.2 471.7,328.3 406.0,355.4 360.0,352.8 310.1,360.7 360.0,292.0 272.4,263.5 342.1,267.4" fill="#1c9b86" fill-opacity="0.12" stroke="#1c9b86" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="360.0,183.3 398.1,239.5 405.9,277.1 417.5,310.7 410.6,361.7 360.0,321.8 318.0,349.8 360.0,292.0 288.2,268.7 341.0,265.9" fill="#7a4ea3" fill-opacity="0.12" stroke="#7a4ea3" stroke-width="2.4" stroke-linejoin="round"/>
+<circle cx="360.0" cy="130.0" r="3.2" fill="#235ccd"/>
+<circle cx="429.1" cy="196.9" r="3.2" fill="#235ccd"/>
+<circle cx="420.2" cy="272.4" r="3.2" fill="#235ccd"/>
+<circle cx="503.9" cy="338.8" r="3.2" fill="#235ccd"/>
+<circle cx="430.7" cy="389.3" r="3.2" fill="#235ccd"/>
+<circle cx="360.0" cy="355.3" r="3.2" fill="#235ccd"/>
+<circle cx="291.7" cy="386.0" r="3.2" fill="#235ccd"/>
+<circle cx="354.9" cy="293.6" r="3.2" fill="#235ccd"/>
+<circle cx="240.5" cy="253.2" r="3.2" fill="#235ccd"/>
+<circle cx="333.3" cy="255.2" r="3.2" fill="#235ccd"/>
+<circle cx="360.0" cy="188.6" r="3.2" fill="#e07a2f"/>
+<circle cx="407.1" cy="227.1" r="3.2" fill="#e07a2f"/>
+<circle cx="394.9" cy="280.7" r="3.2" fill="#e07a2f"/>
+<circle cx="479.2" cy="330.7" r="3.2" fill="#e07a2f"/>
+<circle cx="402.7" cy="350.8" r="3.2" fill="#e07a2f"/>
+<circle cx="360.0" cy="332.4" r="3.2" fill="#e07a2f"/>
+<circle cx="315.1" cy="353.9" r="3.2" fill="#e07a2f"/>
+<circle cx="357.6" cy="292.8" r="3.2" fill="#e07a2f"/>
+<circle cx="274.5" cy="264.2" r="3.2" fill="#e07a2f"/>
+<circle cx="358.9" cy="290.5" r="3.2" fill="#e07a2f"/>
+<circle cx="360.0" cy="144.4" r="3.2" fill="#1c9b86"/>
+<circle cx="398.9" cy="238.5" r="3.2" fill="#1c9b86"/>
+<circle cx="427.0" cy="270.2" r="3.2" fill="#1c9b86"/>
+<circle cx="471.7" cy="328.3" r="3.2" fill="#1c9b86"/>
+<circle cx="406.0" cy="355.4" r="3.2" fill="#1c9b86"/>
+<circle cx="360.0" cy="352.8" r="3.2" fill="#1c9b86"/>
+<circle cx="310.1" cy="360.7" r="3.2" fill="#1c9b86"/>
+<circle cx="360.0" cy="292.0" r="3.2" fill="#1c9b86"/>
+<circle cx="272.4" cy="263.5" r="3.2" fill="#1c9b86"/>
+<circle cx="342.1" cy="267.4" r="3.2" fill="#1c9b86"/>
+<circle cx="360.0" cy="183.3" r="3.2" fill="#7a4ea3"/>
+<circle cx="398.1" cy="239.5" r="3.2" fill="#7a4ea3"/>
+<circle cx="405.9" cy="277.1" r="3.2" fill="#7a4ea3"/>
+<circle cx="417.5" cy="310.7" r="3.2" fill="#7a4ea3"/>
+<circle cx="410.6" cy="361.7" r="3.2" fill="#7a4ea3"/>
+<circle cx="360.0" cy="321.8" r="3.2" fill="#7a4ea3"/>
+<circle cx="318.0" cy="349.8" r="3.2" fill="#7a4ea3"/>
+<circle cx="360.0" cy="292.0" r="3.2" fill="#7a4ea3"/>
+<circle cx="288.2" cy="268.7" r="3.2" fill="#7a4ea3"/>
+<circle cx="341.0" cy="265.9" r="3.2" fill="#7a4ea3"/>
+<text x="360.0" y="68.0" text-anchor="middle" fill="#15243a" font-size="14" font-weight="700">Horizon</text>
+<text x="360.0" y="84.0" text-anchor="middle" fill="#55677c" font-size="13">short</text>
+<text x="491.7" y="110.8" text-anchor="start" fill="#15243a" font-size="14" font-weight="700">Horizon</text>
+<text x="491.7" y="126.8" text-anchor="start" fill="#55677c" font-size="13">medium</text>
+<text x="573.0" y="222.8" text-anchor="start" fill="#15243a" font-size="14" font-weight="700">Horizon</text>
+<text x="573.0" y="238.8" text-anchor="start" fill="#55677c" font-size="13">long</text>
+<text x="573.0" y="361.2" text-anchor="start" fill="#15243a" font-size="14" font-weight="700">Precision</text>
+<text x="573.0" y="377.2" text-anchor="start" fill="#55677c" font-size="13">low</text>
+<text x="491.7" y="473.2" text-anchor="start" fill="#15243a" font-size="14" font-weight="700">Precision</text>
+<text x="491.7" y="489.2" text-anchor="start" fill="#55677c" font-size="13">medium</text>
+<text x="360.0" y="516.0" text-anchor="middle" fill="#15243a" font-size="14" font-weight="700">Precision</text>
+<text x="360.0" y="532.0" text-anchor="middle" fill="#55677c" font-size="13">high</text>
+<text x="228.3" y="473.2" text-anchor="end" fill="#15243a" font-size="14" font-weight="700">Quant.</text>
+<text x="228.3" y="489.2" text-anchor="end" fill="#55677c" font-size="13">no</text>
+<text x="147.0" y="361.2" text-anchor="end" fill="#15243a" font-size="14" font-weight="700">Quant.</text>
+<text x="147.0" y="377.2" text-anchor="end" fill="#55677c" font-size="13">yes</text>
+<text x="147.0" y="222.8" text-anchor="end" fill="#15243a" font-size="14" font-weight="700">React.</text>
+<text x="147.0" y="238.8" text-anchor="end" fill="#55677c" font-size="13">no</text>
+<text x="228.3" y="110.8" text-anchor="end" fill="#15243a" font-size="14" font-weight="700">React.</text>
+<text x="228.3" y="126.8" text-anchor="end" fill="#55677c" font-size="13">yes</text>
+<g transform="translate(86,568)">
+<line x1="0" y1="8" x2="28" y2="8" stroke="#235ccd" stroke-width="3" stroke-linecap="round"/>
+<circle cx="14" cy="8" r="3.2" fill="#235ccd"/>
+<text x="36" y="13" fill="#15243a" font-size="14" font-weight="600">InternW0-Δ</text>
+<line x1="158" y1="8" x2="186" y2="8" stroke="#e07a2f" stroke-width="3" stroke-linecap="round"/>
+<circle cx="172" cy="8" r="3.2" fill="#e07a2f"/>
+<text x="194" y="13" fill="#15243a" font-size="14" font-weight="600">OpenWAM</text>
+<line x1="316" y1="8" x2="344" y2="8" stroke="#1c9b86" stroke-width="3" stroke-linecap="round"/>
+<circle cx="330" cy="8" r="3.2" fill="#1c9b86"/>
+<text x="352" y="13" fill="#15243a" font-size="14" font-weight="600">π0.5</text>
+<line x1="474" y1="8" x2="502" y2="8" stroke="#7a4ea3" stroke-width="3" stroke-linecap="round"/>
+<circle cx="488" cy="8" r="3.2" fill="#7a4ea3"/>
+<text x="510" y="13" fill="#15243a" font-size="14" font-weight="600">Qwen+π0.5</text>
+</g></svg>
+        </div>
+        <div class="details-scroll" role="region" aria-label="Capability profile success rates" tabindex="0">
+          <table class="details-table results-table radar-table">
+            <caption class="sr-only">Success rate for each capability bin. Bold marks the highest value in that row.</caption>
+            <thead>
+              <tr><th scope="col">Bin</th><th scope="col">Tasks</th><th scope="col">InternW0-Δ</th><th scope="col">OpenWAM</th><th scope="col">π0.5</th><th scope="col">Qwen+π0.5</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Horizon short</th><td>2</td><td class="best">51.7</td><td>33.0</td><td>47.1</td><td>34.7</td></tr>
+              <tr><th scope="row">Horizon medium</th><td>8</td><td class="best">37.5</td><td>25.6</td><td>21.1</td><td>20.7</td></tr>
+              <tr><th scope="row">Horizon long</th><td>4</td><td>20.2</td><td>11.7</td><td class="best">22.5</td><td>15.4</td></tr>
+              <tr><th scope="row">Precision low</th><td>2</td><td class="best">48.3</td><td>40.0</td><td>37.5</td><td>19.3</td></tr>
+              <tr><th scope="row">Precision medium</th><td>8</td><td class="best">38.4</td><td>23.2</td><td>25.0</td><td>27.5</td></tr>
+              <tr><th scope="row">Precision high</th><td>4</td><td class="best">20.2</td><td>12.9</td><td>19.4</td><td>9.5</td></tr>
+              <tr><th scope="row">Quant. no</th><td>13</td><td class="best">37.1</td><td>24.4</td><td>27.1</td><td>22.8</td></tr>
+              <tr><th scope="row">Quant. yes</th><td>1</td><td class="best">1.7</td><td>0.8</td><td>0.0</td><td>0.0</td></tr>
+              <tr><th scope="row">React. no</th><td>11</td><td class="best">40.1</td><td>28.7</td><td>29.4</td><td>24.1</td></tr>
+              <tr><th scope="row">React. yes</th><td>3</td><td class="best">14.5</td><td>0.6</td><td>9.7</td><td>10.3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="details-note">Success rate (%) on the 14 demonstrated tasks. Each spoke is the unweighted mean of the tasks in that bin. Quant. yes is task 14 only. React. yes is tasks 03, 07, and 13.</p>
+
       <p class="details-lead">Task success stays below the stage score for every model. On the 14 demonstrated tasks, InternW0-Δ reaches 34.6 ± 1.1% success and a stage score of 60.5 ± 1.0, ahead of π0.5 (25.2 ± 1.4% and 51.2 ± 0.4), OpenWAM (22.7 ± 0.5% and 55.2 ± 0.5), and Qwen+π0.5 (20.8% and 42.4). Across all 20 tasks, InternW0-Δ reaches 24.5 ± 0.9% and 47.0 ± 0.8, compared with 17.6 ± 1.0% and 39.9 ± 0.3 for π0.5, 16.0 ± 0.3% and 42.5 ± 0.4 for OpenWAM, and 14.6% and 33.3 for Qwen+π0.5.</p>
       <div class="details-scroll" role="region" aria-label="Results by operation family" tabindex="0">
         <table class="details-table results-table results-main">

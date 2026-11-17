@@ -112,6 +112,11 @@ select{min-height:40px;padding:7px 30px 7px 12px;background:#fff;border:1px soli
 .variant-count{display:block;margin-bottom:6px;color:var(--blue);font-size:13px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
 .details-note{margin:22px 0 0;color:var(--muted);font-size:15px;line-height:1.75;text-align:justify}
 .results h3{margin:34px 0 14px;font-size:21px;font-weight:600}
+.results h2 + h3{margin-top:4px}
+.radar-wrap{display:grid;grid-template-columns:minmax(320px,560px) minmax(0,1fr);gap:22px;align-items:center;margin-top:6px}
+.radar-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:6px 6px 2px}
+.radar-card svg{display:block;width:100%;height:auto}
+.radar-table{min-width:560px}
 .results-table :is(th,td){text-align:center;font-variant-numeric:tabular-nums;white-space:nowrap}
 .results-table tbody th{text-align:left}
 .results-table .best{font-weight:700;color:var(--ink)}
@@ -131,6 +136,7 @@ body.dialog-open,body.drawer-open{overflow:hidden}.noscript-message{position:fix
   .topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 18px;background:rgba(247,249,252,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
   .menu-button{display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid var(--line);border-radius:8px;background:#fff}.menu-button svg{width:22px;height:22px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linecap:round}
   .sidebar{visibility:hidden;width:min(300px,85vw);box-shadow:0 0 40px #0d1a2b33;transform:translateX(-100%);transition:transform .2s ease,visibility .2s}.sidebar.open{visibility:visible;transform:none}}
+@media(max-width:980px){.radar-wrap{grid-template-columns:1fr}}
 @media(max-width:760px){.task-grid,.feature-grid{grid-template-columns:1fr}.teaser figcaption{flex-direction:column;gap:6px}.table-key div{grid-template-columns:1fr;gap:2px}.toolbar-wrapper{position:relative;top:auto}.task-card{scroll-margin-top:76px}}
 @media(max-width:640px){body{font-size:16px}.shell{width:calc(100% - 36px)}.hero{padding:34px 0 26px}.paper-title-lead{font-size:36px}.paper-title-subtitle{font-size:26px}
   .page-section{padding:32px 0 38px}.page-section h2{font-size:30px}.about-text p{font-size:17px}.gallery-intro{flex-wrap:wrap}
