@@ -439,7 +439,7 @@ window.WETLAB_TASKS = [
     "metrics": [
       {
         "stage": "S1",
-        "criterion": "Open the centrifuge lid to an angle of −90° to −60°.",
+        "criterion": "Open the centrifuge lid to 0–30°.",
         "weight": 0.2,
         "skills": "press",
         "count": 1
@@ -493,14 +493,14 @@ window.WETLAB_TASKS = [
     "metrics": [
       {
         "stage": "S1",
-        "criterion": "Open the centrifuge lid to an angle of −90° to −60°.",
+        "criterion": "Open the centrifuge lid to 0–30°.",
         "weight": 0.16666666666666666,
         "skills": "press",
         "count": 1
       },
       {
         "stage": "S1",
-        "criterion": "Insert each of the two tubes into a rotor slot.",
+        "criterion": "Insert each of the two tubes into a rotor slot, tilted 15–35° from vertical.",
         "weight": 0.16666666666666666,
         "skills": "insert",
         "count": 2
